@@ -43,21 +43,19 @@
     font-size: 0.9em;
     color: #ffffff;
     text-transform: uppercase;
-    z-index: 5;
-}
-
-.nav > ul {
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
+    z-index: 6;
 }
 
-.nav > ul li {
+.nav > a {
     margin: 15px;
+    text-decoration: none;
+    color: #ffffff;
     cursor: pointer;
 }
 
-.nav > ul > li:hover {
+.nav > a:hover {
     border-bottom: 1px solid #ffffff;
 }
 
@@ -145,7 +143,7 @@
 
 
 /* Technologies Section */
-.technologies {
+#technologies {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -168,7 +166,7 @@
     margin: 10px;
 }
 
-.projects {
+#projects {
     display: flex;
     flex-direction: column;
     height: 100%;   
