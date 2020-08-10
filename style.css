@@ -202,6 +202,7 @@
     color: #4A4E69;
     padding: 10px;
     max-width: 750px;
+    margin-bottom: 15px;
 }
 
 .btn {
@@ -210,7 +211,7 @@
     text-decoration: none;
     padding: 1em 2em;
     border: 1px solid black;
-    margin: .5em 0;
+    margin: 10px 0;
     font-size: 14px;
 }
 
