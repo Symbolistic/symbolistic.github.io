@@ -41,7 +41,7 @@
     position: absolute;
     top: 0;
     font-size: 0.9em;
-    color: #ffffff;
+    color: #ffffff!important;
     text-transform: uppercase;
     display: flex;
     flex-wrap: wrap;
