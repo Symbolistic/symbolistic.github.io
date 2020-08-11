@@ -40,7 +40,7 @@
 .nav {
     position: absolute;
     top: 0;
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #ffffff!important;
     text-transform: uppercase;
     display: flex;
@@ -74,7 +74,7 @@
 
 .about-me {
     display: flex;
-    font-size: 28px;
+    font-size: 24px;
     z-index: 5;
 }
 
@@ -179,14 +179,15 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    padding: 30px;
+    padding: 35px;
     text-align: center;
+    height: 100%;
 }
 
 .gray-bg {
     background-color: lightgrey;
     height: 100%; 
-    clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%)
+    clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
 
 .project-preview {
@@ -206,6 +207,19 @@
     margin-bottom: 15px;
 }
 
+.project-techs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 5px;
+    margin-top: 10px;
+}
+
+.btn-links {
+    margin-top: 30px;
+    padding: 10px;
+}
+
 .btn {
     background: #ffffff;
     color: black;
@@ -219,4 +233,27 @@
 .btn:hover {
     background-color: black;
     color: #ffffff;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.title {
+    margin: 10px 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+.contact-link {
+    color: black;
+
 }
