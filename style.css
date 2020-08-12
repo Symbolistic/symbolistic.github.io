@@ -8,6 +8,8 @@
     position: relative;
     margin: 0 auto;
     max-width: 100vw;
+    Font-Family: 'Cabin', Sans-Serif;
+    Font-Size: 16px;
 }
 
 .banner-area {
@@ -74,7 +76,8 @@
 
 .about-me {
     display: flex;
-    font-size: 24px;
+    font-family: 'Roboto Condensed', Sans-Serif;
+    font-size: 25px;
     z-index: 5;
 }
 
@@ -172,6 +175,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;   
+    margin-top: 30px;
 }
 
 .project {
@@ -179,7 +183,7 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    padding: 35px;
+    padding: 40px;
     text-align: center;
     height: 100%;
 }
@@ -198,6 +202,9 @@
 .project-title {
     margin-top: 15px;
     color: #337ab7;
+    font-family: 'Roboto Condensed', Sans-Serif;
+    letter-spacing: 0.1em;
+    font-size: 25px;
 }
 
 .description {
