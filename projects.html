@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Vishon's Portfolio</title>
+	</head>
+	<body>
+		<div class="container">
+            <div class="projects-nav">
+                <a href="./index.html">Home</a>
+                <a href="./index.html#technologies">Technologies</a>
+                <a href="./index.html#projects">Projects</a>
+                <a href="./index.html#contact">Contact</a>	
+            </div>
+            
+            <h1 class="title">Projects</h1>
+            <h3>Filter</h3>
+            <div class="filter-buttons">
+                <button onclick="showAll()">All Apps</button>
+                <button onclick="vanillaJS()">Vanilla Javascript</button>
+                <button onclick="react()">React</button>
+                <button onclick="fullStack()">Full Stack</button>
+                <button onclick="d3()">D3.js</button>
+            </div>
+			<div id="projects">
+				<div class="project gray-bg react fullstack">
+					<image
+						class="project-preview"
+						src="./assets/projects/budgetsite.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Budgeting App</h2>
+					<p class="description">
+						This is my current project and the one I will be releasing to the
+						public for use. A budgeting app that values consumer privacy with a
+						simplistic design, with flexible and customizable budget options.
+						This app has a full login system using JWT and PassportJS and is
+						able to setup monthly budgets and keep them tracked. It has a visual
+						display of the budget using ChartJS. This is hosted on Heroku so the
+						inital load might be slow.
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>React</li>
+							<li>NodeJS</li>
+							<li>ExpressJS</li>
+							<li>MongoDB</li>
+							<li>Mongoose</li>
+							<li>ChartJS</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://alpha-budget-app.herokuapp.com/register"
+							target="_blank"
+							>View App</a
+						>
+					</div>
+				</div>
+
+				<div class="project react fullstack">
+					<image
+						class="project-preview"
+						src="./assets/projects/movieapp.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Movie App</h2>
+					<p class="description">
+						This app was made to be a clone of a normal movie rating website, it
+						has a full login system along with options to favorite movies and
+						see the latest movies informaton. This is hosted on Heroku so the
+						inital load might be slow.
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>React</li>
+							<li>NodeJS</li>
+							<li>ExpressJS</li>
+							<li>MongoDB</li>
+							<li>Mongoose</li>
+							<li>(TMDb) API</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://movie-app-mern-stack.herokuapp.com/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/movie-app-mern-stack"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project gray-bg fullstack">
+					<image
+						class="project-preview"
+						src="./assets/projects/messageboard.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Anonymous Message Board</h2>
+					<p class="description">
+						This is a full stack message board app, its still been kept
+						relatively simple. This also makes use of Unit Testing to always
+						test the functionality upon changes made to the application code. It
+						is hosted on Glitch.com so may be a bit slow to load at first.
+					</p>
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>NodeJS</li>
+							<li>ExpressJS</li>
+							<li>MongoDB</li>
+							<li>Mongoose</li>
+							<li>Chai</li>
+							<li>Mocha</li>
+							<li>Helmet.js</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://pool-midi-albertonykus.glitch.me/b/general/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/Project-Anonymous-Message-Board"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project react">
+					<image
+						class="project-preview"
+						src="./assets/projects/quoteapp.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Random Quote Machine</h2>
+					<p class="description">
+						This app was kept simple and generates famous quotes and can be
+						shared via twitter.
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>React</li>
+							<li>Forismatic API</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://symbolistic.github.io/Random-Quote-Machine-NEW/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/Random-Quote-Machine-NEW/tree/master"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project gray-bg react">
+					<image
+						class="project-preview"
+						src="./assets/projects/weatherapp.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Weather App</h2>
+					<p class="description">
+						A weather app that detects location and can also search other
+						locations for current weather.
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>React</li>
+							<li>Weather API</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://symbolistic.github.io/react-weather-app/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/react-weather-app"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project react d3">
+					<image
+						class="project-preview"
+						src="./assets/projects/educationalmap.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">United States Educational Map</h2>
+					<p class="description">
+						Graphed map made in D3.js which displays the United States
+						Educational Attainment Percentage of adults age 25 and older with a
+						bachelor's degree or higher (2010-2014)
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>React</li>
+							<li>D3.js</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://symbolistic.github.io/usa-education-map/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/usa-education-map/tree/master"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project gray-bg react d3">
+					<image
+						class="project-preview"
+						src="./assets/projects/gdpgraph.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">United States GDP Graph</h2>
+					<p class="description">
+						Graph made in D3, this describes the Gross Domestic Product changes
+						in graph form
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>React</li>
+							<li>D3.js</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://symbolistic.github.io/united-states-gdp/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/united-states-gdp"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project react d3">
+					<image
+						class="project-preview"
+						src="./assets/projects/treemap.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Treemap Diagram</h2>
+					<p class="description">
+						Graphed treemap diagram made in D3.js that displays the top 100
+						games sold by platform. It grabs the data from a JSON file.
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>React</li>
+							<li>D3.js</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://symbolistic.github.io/treemap-diagram/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/treemap-diagram/tree/master"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project gray-bg react d3">
+					<image
+						class="project-preview"
+						src="./assets/projects/heatmap.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Heat Map</h2>
+					<p class="description">
+						This shows Monthly Global Land-Surface. Temperatures from 1753 -
+						2015: base temperature 8.66℃, it grabs the data from a JSON file
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>React</li>
+							<li>D3.js</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://symbolistic.github.io/heat-map-graph/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/heat-map-graph"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project react d3">
+					<image
+						class="project-preview"
+						src="./assets/projects/scatterplotdoping.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Doping in Professional Bike Racing Scatterplot</h2>
+					<p class="description">
+						This graphs shows Doping in Professional Bicycle Racing graphed
+						using D3.js and React, it grabs data from a JSON file
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>React</li>
+							<li>D3.js</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://symbolistic.github.io/scatterplot-doping/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/scatterplot-doping/tree/master"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project gray-bg react">
+					<image
+						class="project-preview"
+						src="./assets/projects/wikipediaviewer.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Wikipedia Viewer</h2>
+					<p class="description">
+						This project was made in React using Wikipedia's API to create a
+						search function that displays all search results in a clean fashion
+						on this app. This App is responsive.
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>React</li>
+							<li>Wikipedia's API</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://symbolistic.github.io/react-wikipedia-viewer/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/react-wikipedia-viewer"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project react">
+					<image
+						class="project-preview"
+						src="./assets/projects/twitchapi.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Twitch API</h2>
+					<p class="description">
+						This is a simple React project using the Twitch API to keep track of
+						some streamers and their current status, if they're offline or
+						online, and what they are playing. This App is responsive.
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>React</li>
+							<li>Twitch.tv API</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://symbolistic.github.io/react-twitch-api/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/react-twitch-api"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project gray-bg react">
+					<image
+						class="project-preview"
+						src="./assets/projects/pomodoroclock.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Pomodoro Clock</h2>
+					<p class="description">
+						A countdown pomodoro clock made in React
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>React</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://symbolistic.github.io/pomodoro-clock/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/pomodoro-clock"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project fullstack">
+					<image
+						class="project-preview"
+						src="./assets/projects/exercisetracker.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Exercise Tracker</h2>
+					<p class="description">
+						This is a full stack exercise tracking app, its still been kept
+						relatively simple. This also makes use of Unit Testing to always
+						test the functionality upon changes made to the application code.
+						This also uses Helmet.js for basic securtiy. This displays the data
+						in JSON format since it was a simple full stack app I made when
+						getting started. It is hosted on Glitch.com so may be a bit slow to
+						load at first.
+					</p>
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>NodeJS</li>
+							<li>ExpressJS</li>
+							<li>MongoDB</li>
+							<li>Mongoose</li>
+							<li>Chai</li>
+							<li>Mocha</li>
+							<li>Helmet.js</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://receptive-rain-fahrenheit.glitch.me/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/exercise-tracker-rest-api"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project gray-bg fullstack">
+					<image
+						class="project-preview"
+						src="./assets/projects/metricimperial.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Metric Imperial Converter</h2>
+					<p class="description">
+						This is a full stack metric-imperial converter app, its still been
+						kept relatively simple. It converts gal, lb, kg, km, and liters.
+						This also makes use of Unit Testing to always test the functionality
+						upon changes made to the application code. This also uses Helmet.js
+						for basic securtiy. This displays the data in JSON format since it
+						was a simple full stack app I made when getting started. It is
+						hosted on Glitch.com so may be a bit slow to load at first.
+					</p>
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>NodeJS</li>
+							<li>ExpressJS</li>
+							<li>MongoDB</li>
+							<li>Mongoose</li>
+							<li>Chai</li>
+							<li>Mocha</li>
+							<li>Helmet.js</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://scratched-keen-icebreaker.glitch.me/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/Metric-Imperial-Converter"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project fullstack">
+					<image
+						class="project-preview"
+						src="./assets/projects/issuetracker.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Issue Tracker</h2>
+					<p class="description">
+						This is a full stack issue tracking app, its still been kept
+						relatively simple. This app allows users to add issues or bugs for
+						specific projects. This also makes use of Unit Testing to always
+						test the functionality upon changes made to the application code.
+						This also uses Helmet.js for basic securtiy. This displays the data
+						in JSON format since it was a simple full stack app I made when
+						getting started. It is hosted on Glitch.com so may be a bit slow to
+						load at first.
+					</p>
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>NodeJS</li>
+							<li>ExpressJS</li>
+							<li>MongoDB</li>
+							<li>Mongoose</li>
+							<li>Chai</li>
+							<li>Mocha</li>
+							<li>Helmet.js</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://ajar-wheat-ellipse.glitch.me/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/Issue-Tracker"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project gray-bg react">
+					<image
+						class="project-preview"
+						src="./assets/projects/markdownpreviewer.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Markdown Previewer</h2>
+					<p class="description">
+						This app will let you type markdown code and display exactly how it
+						will look by previewing it on the side of the code. This uses the
+						Marked.js library to easily convert the code. This app is
+						responsive.
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>React</li>
+							<li>Marked.js</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://symbolistic.github.io/markdown-previewer/"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/markdown-previewer/tree/master"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project vanillaJS">
+					<image
+						class="project-preview"
+						src="./assets/projects/tictactoe.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Tic Tac Toe</h2>
+					<p class="description">
+						Pretty much an unbeatable AI built with a complex recursive
+						function, this is a standard tic tac toe game and is responsive, but
+						its on my portfolio because of the recursive function for the AI.
+					</p>
+
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>Vanilla JavaScript</li>
+						</ul>
+					</div>
+
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://symbolistic.github.io/tic-tac-toe/"
+							target="_blank"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/tic-tac-toe"
+							target="_blank"
+							>View Code</a
+						>
+					</div>
+				</div>
+			</div>
+        </div>
+        <script src="projects.js"></script>
+	</body>
+</html>
