@@ -8,31 +8,34 @@
 			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
 			crossorigin="anonymous"
-        />
-        
-        <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+		/>
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700"
+			rel="stylesheet"
+		/>
 
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<title>Vishon's Portfolio</title>
 	</head>
 	<body>
 		<div class="container">
-            <div class="projects-nav">
-                <a href="./index.html">Home</a>
-                <a href="./index.html#technologies">Technologies</a>
-                <a href="./index.html#projects">Projects</a>
-                <a href="./index.html#contact">Contact</a>	
-            </div>
-            
-            <h1 class="title">Projects</h1>
-            <h3>Filter</h3>
-            <div class="filter-buttons">
-                <button onclick="showAll()">All Apps</button>
-                <button onclick="vanillaJS()">Vanilla Javascript</button>
-                <button onclick="react()">React</button>
-                <button onclick="fullStack()">Full Stack</button>
-                <button onclick="d3()">D3.js</button>
-            </div>
+			<div class="projects-nav">
+				<a href="./index.html">Home</a>
+				<a href="./index.html#technologies">Technologies</a>
+				<a href="./index.html#projects">Projects</a>
+				<a href="./index.html#contact">Contact</a>
+			</div>
+
+			<h1 class="title">Projects</h1>
+			<h3>Filter</h3>
+			<div class="filter-buttons">
+				<button onclick="showAll()">All Apps</button>
+				<button onclick="vanillaJS()">Vanilla Javascript</button>
+				<button onclick="react()">React</button>
+				<button onclick="fullStack()">Full Stack</button>
+				<button onclick="d3()">D3.js</button>
+			</div>
 			<div id="projects">
 				<div class="project gray-bg react fullstack">
 					<image
@@ -87,14 +90,16 @@
 					<p class="description">
 						This app was made to be a clone of a normal movie rating website, it
 						has a full login system along with options to favorite movies and
-						see the latest movies informaton. This is hosted on Heroku so the
-						inital load might be slow.
+						see the latest movies informaton. I used redux to pass around user
+						data on this app. This is hosted on Heroku so the inital load might
+						be slow.
 					</p>
 
 					<div class="technologies-used">
 						<h4>Technologies Used</h4>
 						<ul class="project-techs">
 							<li>React</li>
+							<li>Redux</li>
 							<li>NodeJS</li>
 							<li>ExpressJS</li>
 							<li>MongoDB</li>
@@ -407,7 +412,9 @@
 						height="160"
 						width="320"
 					/>
-					<h2 class="project-title">Doping in Professional Bike Racing Scatterplot</h2>
+					<h2 class="project-title">
+						Doping in Professional Bike Racing Scatterplot
+					</h2>
 					<p class="description">
 						This graphs shows Doping in Professional Bicycle Racing graphed
 						using D3.js and React, it grabs data from a JSON file
@@ -776,7 +783,7 @@
 					</div>
 				</div>
 			</div>
-        </div>
-        <script src="projects.js"></script>
+		</div>
+		<script src="projects.js"></script>
 	</body>
 </html>
