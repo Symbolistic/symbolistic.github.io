@@ -10,7 +10,10 @@
 			crossorigin="anonymous"
 		/>
 
-		<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700"
+			rel="stylesheet"
+		/>
 
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<title>Vishon's Portfolio</title>
@@ -18,10 +21,10 @@
 	<body>
 		<div class="container">
 			<div class="banner-area">
-				<div class="nav">			
-                    <a href="#technologies">Technologies</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>	
+				<div class="nav">
+					<a href="#technologies">Technologies</a>
+					<a href="#projects">Projects</a>
+					<a href="#contact">Contact</a>
 				</div>
 
 				<div class="info">
@@ -51,23 +54,21 @@
 							<p>Email</p>
 						</a>
 
-						
 						<a class="link resume" href="./assets/VSinghResume-NEW-Public.pdf">
 							<i class="fa fa-file-text" aria-hidden="true"></i>
 							<p>Resume</p>
 						</a>
 					</div>
 
-					<a href="#projects" class="banner-btn">
-						View Projects
-                    </a>
+					<a href="#projects" class="banner-btn"> View Projects </a>
 				</div>
 			</div>
 
 			<div id="technologies">
 				<h3>
 					I am a Full Stack Javascript Developer who uses the MERN Stack
-					(MongoDB/Mongoose, Express, React, NodeJS)
+					(MongoDB/Mongoose, Express, React, NodeJS) along with Redux,
+					TypeScript, Sass, Material UI, and D3.js
 				</h3>
 				<div class="skills">
 					<image
@@ -106,10 +107,28 @@
 						height="100"
 						width="85"
 					/>
+
+					<image
+						class="skill-icon"
+						src="./assets/icons/redux.png"
+						height="100"
+						width="85"
+					/>
+					<image
+						class="skill-icon"
+						src="./assets/icons/ts.png"
+						height="100"
+						width="80"
+					/>
+					<image
+						class="skill-icon"
+						src="./assets/icons/sass.png"
+						height="100"
+						width="90"
+					/>
 				</div>
 			</div>
 
-            
 			<div id="projects">
 				<div class="project gray-bg">
 					<image
@@ -125,7 +144,7 @@
 						design, with flexible and customizable budget options. This app has
 						a full login system using JWT and PassportJS and is able to setup
 						monthly budgets and keep them tracked. It has a visual display of
-                        the budget using ChartJS. Use the Guest Login to check it out!
+						the budget using ChartJS. Use the Guest Login to check it out!
 					</p>
 
 					<div class="technologies-used">
@@ -139,12 +158,16 @@
 							<li>ChartJS</li>
 							<li>HTML5</li>
 							<li>CSS3</li>
+							<li>Sass</li>
+							<li>Material UI</li>
 						</ul>
 					</div>
 
 					<div class="btn-links">
 						<a class="btn" href="https://lucidbudget.com/">View App</a>
-						<a class="btn" href="https://github.com/Symbolistic/mern-budget-app">View Code</a>
+						<a class="btn" href="https://github.com/Symbolistic/mern-budget-app"
+							>View Code</a
+						>
 					</div>
 				</div>
 
@@ -180,12 +203,57 @@
 					</div>
 
 					<div class="btn-links">
-						<a class="btn" href="https://movie-app-mern-stack.herokuapp.com/">View App</a>
-						<a class="btn" href="https://github.com/Symbolistic/movie-app-mern-stack">View Code</a>
+						<a class="btn" href="https://movie-app-mern-stack.herokuapp.com/"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/movie-app-mern-stack"
+							>View Code</a
+						>
 					</div>
-                </div>
+				</div>
 
-                <div class="project gray-bg">
+				<div class="project gray-bg">
+					<image
+						class="project-preview"
+						src="./assets/projects/donpollo.png"
+						height="160"
+						width="320"
+					/>
+					<h2 class="project-title">Don Pollo's Restaurant Website</h2>
+					<p class="description">
+						Don Pollo is my local restaurant and I decided to make a better and
+						updated website for them, this website helped me improve my
+						TypeScript, Sass, and Material UI skills as well as my design
+						skills.
+					</p>
+					<div class="technologies-used">
+						<h4>Technologies Used</h4>
+						<ul class="project-techs">
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>Sass</li>
+							<li>Material UI</li>
+							<li>React</li>
+							<li>TypeScript</li>
+						</ul>
+					</div>
+					<div class="btn-links">
+						<a
+							class="btn"
+							href="https://vishonsingh.com/react-ts-sass-restaurant-app/"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/react-ts-sass-restaurant-app"
+							>View Code</a
+						>
+					</div>
+				</div>
+
+				<div class="project">
 					<image
 						class="project-preview"
 						src="./assets/projects/messageboard.png"
@@ -194,7 +262,8 @@
 					/>
 					<h2 class="project-title">Anonymous Message Board</h2>
 					<p class="description">
-						This is a full stack message board app, its still been kept relatively simple and is hosted on Glitch.com
+						This is a full stack message board app, its still been kept
+						relatively simple and is hosted on Glitch.com
 					</p>
 					<div class="technologies-used">
 						<h4>Technologies Used</h4>
@@ -209,12 +278,20 @@
 						</ul>
 					</div>
 					<div class="btn-links">
-						<a class="btn" href="https://pool-midi-albertonykus.glitch.me/b/general/">View App</a>
-						<a class="btn" href="https://github.com/Symbolistic/Project-Anonymous-Message-Board">View Code</a>
+						<a
+							class="btn"
+							href="https://pool-midi-albertonykus.glitch.me/b/general/"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/Project-Anonymous-Message-Board"
+							>View Code</a
+						>
 					</div>
 				</div>
-                
-                <div class="project">
+
+				<div class="project gray-bg">
 					<image
 						class="project-preview"
 						src="./assets/projects/quoteapp.png"
@@ -223,9 +300,10 @@
 					/>
 					<h2 class="project-title">Random Quote Machine</h2>
 					<p class="description">
-						This app was kept simple and generates famous quotes and can be shared via twitter.
+						This app was kept simple and generates famous quotes and can be
+						shared via twitter.
 					</p>
-					
+
 					<div class="technologies-used">
 						<h4>Technologies Used</h4>
 						<ul class="project-techs">
@@ -237,36 +315,16 @@
 					</div>
 
 					<div class="btn-links">
-						<a class="btn" href="https://symbolistic.github.io/Random-Quote-Machine-NEW/">View App</a>
-						<a class="btn" href="https://github.com/Symbolistic/Random-Quote-Machine-NEW">View Code</a>
-					</div>
-				</div>
-
-				<div class="project gray-bg">
-					<image
-						class="project-preview"
-						src="./assets/projects/weatherapp.png"
-						height="160"
-						width="320"
-					/>
-					<h2 class="project-title">Weather App</h2>
-					<p class="description">
-						A weather app that detects location and can also search other locations for current weather.
-					</p>
-					
-					<div class="technologies-used">
-						<h4>Technologies Used</h4>
-						<ul class="project-techs">
-							<li>React</li>
-							<li>Weather API</li>
-							<li>HTML5</li>
-							<li>CSS3</li>
-						</ul>
-					</div>
-
-					<div class="btn-links">
-						<a class="btn" href="https://symbolistic.github.io/react-weather-app/">View App</a>
-						<a class="btn" href="https://github.com/Symbolistic/react-weather-app">View Code</a>
+						<a
+							class="btn"
+							href="https://symbolistic.github.io/Random-Quote-Machine-NEW/"
+							>View App</a
+						>
+						<a
+							class="btn"
+							href="https://github.com/Symbolistic/Random-Quote-Machine-NEW"
+							>View Code</a
+						>
 					</div>
 
 					<a class="view-all btn" href="./projects.html">View All Projects</a>
@@ -275,31 +333,33 @@
 
 			<div id="contact">
 				<h1 class="title">Contact Me</h1>
-				<p>If you're interested in getting in touch or have questions, you can reach out to me below</p>
-				
+				<p>
+					If you're interested in getting in touch or have questions, you can
+					reach out to me below
+				</p>
+
 				<div class="social-links">
 					<a class="contact-link link" href="https://github.com/Symbolistic">
-					<i class="fa fa-github" aria-hidden="true"></i>
-					<p>Github</p>
-				</a>
+						<i class="fa fa-github" aria-hidden="true"></i>
+						<p>Github</p>
+					</a>
 
-				<a
-					class="contact-link link"
-					href="https://www.linkedin.com/in/vishon-singh-23251b15a"
-				>
-					<i class="fa fa-linkedin" aria-hidden="true"></i>
-					<p>LinkedIn</p>
-				</a>
+					<a
+						class="contact-link link"
+						href="https://www.linkedin.com/in/vishon-singh-23251b15a"
+					>
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<p>LinkedIn</p>
+					</a>
 
-				<a
-					class="contact-link link"
-					href="./assets/VSinghResume-NEW-Public.pdf"
-				>
-					<i class="fa fa-file-text" aria-hidden="true"></i>
-					<p>Resume</p>
-				</a>
+					<a
+						class="contact-link link"
+						href="./assets/VSinghResume-NEW-Public.pdf"
+					>
+						<i class="fa fa-file-text" aria-hidden="true"></i>
+						<p>Resume</p>
+					</a>
 				</div>
-				
 
 				<p><span>Email:</span> VishonRSingh@gmail.com</p>
 			</div>
