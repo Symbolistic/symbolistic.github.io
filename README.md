@@ -1,2 +1,1 @@
-# symbolistic.github.io
-My main portfolio website
+## Welcome to my Github
