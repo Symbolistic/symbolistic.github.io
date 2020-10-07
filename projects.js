@@ -88,5 +88,3 @@ const d3 = () => {
 		}
 	});
 };
-
-console.log(projects);
